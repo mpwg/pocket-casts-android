@@ -12,6 +12,22 @@ updates:
       # These dependencies cannot be updated beyond v2 for non-Enterpise clients
       - dependency-name: "gradle-build-action"
       - dependency-name: "wrapper-validation-action"
+  - package-ecosystem: "bundler"
+    open-pull-requests-limit: 5
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "[Type] Tech Debt"
+      - "[Area] Dependencies"
+  - package-ecosystem: "bundler"
+    open-pull-requests-limit: 5
+    directory: "/scripts/themes"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "[Type] Tech Debt"
+      - "[Area] Dependencies"
   - package-ecosystem: "gradle"
     open-pull-requests-limit: 8
     directory: "/"
